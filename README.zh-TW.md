@@ -16,15 +16,60 @@
 
 ## 📦 安裝方式
 
-### Antigravity Skill
+### 方式一：透過 npx add-skill 安裝（推薦）
 
-使用以下指令將此 Skill 加入 Antigravity：
+使用 [add-skill](https://github.com/vercel-labs/add-skill) 工具可以快速安裝到各種 AI 代理程式。
 
+#### 自動偵測已安裝的代理程式
+
+```bash
+npx add-skill kevintsai1202/GeminiWatermarkRemoveSkill
 ```
-/add-skill https://github.com/kevintsai1202/GeminiWatermarkRemoveSkill
+
+#### 安裝到特定代理程式
+
+```bash
+# 安裝到 Antigravity
+npx add-skill kevintsai1202/GeminiWatermarkRemoveSkill -a antigravity -g -y
+
+# 安裝到 Claude Code
+npx add-skill kevintsai1202/GeminiWatermarkRemoveSkill -a claude-code -g -y
+
+# 安裝到 Cursor
+npx add-skill kevintsai1202/GeminiWatermarkRemoveSkill -a cursor -g -y
+
+# 安裝到 Roo Code
+npx add-skill kevintsai1202/GeminiWatermarkRemoveSkill -a roo -g -y
+
+# 安裝到 Gemini CLI
+npx add-skill kevintsai1202/GeminiWatermarkRemoveSkill -a gemini-cli -g -y
 ```
 
-> 安裝完成後，透過 AI 對話即可調用移除浮水印功能。
+**參數說明：**
+- `-a, --agent <agents...>`：指定要安裝的代理程式
+- `-g, --global`：安裝到全域目錄
+- `-y, --yes`：跳過確認提示
+
+### 方式二：透過 Git 複製
+
+```bash
+# 複製到 Antigravity 的 skills 目錄
+git clone https://github.com/kevintsai1202/GeminiWatermarkRemoveSkill.git ~/.gemini/antigravity/skills/gemini-watermark-remove
+
+# 複製到 Claude Code 的 skills 目錄
+git clone https://github.com/kevintsai1202/GeminiWatermarkRemoveSkill.git ~/.claude/skills/gemini-watermark-remove
+```
+
+### 方式三：手動安裝
+
+1. 下載本專案的 ZIP 檔案或複製到本機
+2. 將資料夾複製到對應工具的技能目錄：
+   - **Antigravity**: `~/.gemini/antigravity/skills/`
+   - **Claude Code**: `~/.claude/skills/`
+
+### 驗證安裝
+
+重新啟動 AI 代理程式或重新載入 skills，然後透過 AI 對話調用即可。
 
 ## 🚀 使用方式
 

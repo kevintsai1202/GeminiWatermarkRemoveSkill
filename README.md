@@ -16,15 +16,60 @@ Remove watermarks from Google Gemini AI generated images (Nano Banana).
 
 ## 📦 Installation
 
-### Antigravity Skill
+### Method 1: npx add-skill (Recommended)
 
-Add this Skill to Antigravity using the following command:
+Use [add-skill](https://github.com/vercel-labs/add-skill) for quick installation to various AI agents.
 
+#### Auto-detect installed agents
+
+```bash
+npx add-skill kevintsai1202/GeminiWatermarkRemoveSkill
 ```
-/add-skill https://github.com/kevintsai1202/GeminiWatermarkRemoveSkill
+
+#### Install to specific agent
+
+```bash
+# Install to Antigravity
+npx add-skill kevintsai1202/GeminiWatermarkRemoveSkill -a antigravity -g -y
+
+# Install to Claude Code
+npx add-skill kevintsai1202/GeminiWatermarkRemoveSkill -a claude-code -g -y
+
+# Install to Cursor
+npx add-skill kevintsai1202/GeminiWatermarkRemoveSkill -a cursor -g -y
+
+# Install to Roo Code
+npx add-skill kevintsai1202/GeminiWatermarkRemoveSkill -a roo -g -y
+
+# Install to Gemini CLI
+npx add-skill kevintsai1202/GeminiWatermarkRemoveSkill -a gemini-cli -g -y
 ```
 
-> After installation, invoke it through AI conversation to remove watermarks from images.
+**Parameters:**
+- `-a, --agent <agents...>`: Specify target agent
+- `-g, --global`: Install to global directory
+- `-y, --yes`: Skip confirmation prompt
+
+### Method 2: Git Clone
+
+```bash
+# Clone to Antigravity skills directory
+git clone https://github.com/kevintsai1202/GeminiWatermarkRemoveSkill.git ~/.gemini/antigravity/skills/gemini-watermark-remove
+
+# Clone to Claude Code skills directory
+git clone https://github.com/kevintsai1202/GeminiWatermarkRemoveSkill.git ~/.claude/skills/gemini-watermark-remove
+```
+
+### Method 3: Manual Installation
+
+1. Download ZIP or clone this repository
+2. Copy the folder to the corresponding skills directory:
+   - **Antigravity**: `~/.gemini/antigravity/skills/`
+   - **Claude Code**: `~/.claude/skills/`
+
+### Verify Installation
+
+Restart your AI agent or reload skills, then invoke through AI conversation.
 
 ## 🚀 Usage
 
