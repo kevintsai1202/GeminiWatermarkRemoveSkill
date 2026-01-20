@@ -60,6 +60,21 @@ npx gemini-watermark-remove image.png --gain 1.5
 | `-m, --mode` | 遮罩模式: `auto`, `small`, `large` | `auto` |
 | `-g, --gain` | Alpha 增益值 (1.0-3.0) | `1.0` |
 
+## 📁 批次處理
+
+使用 PowerShell 批次處理多張圖片：
+
+```powershell
+# 處理當前目錄所有 PNG 檔案
+Get-ChildItem "*.png" | ForEach-Object { npx gemini-watermark-remove $_.FullName }
+
+# 處理指定資料夾內的所有圖片
+Get-ChildItem "D:\Images\*.png" | ForEach-Object { npx gemini-watermark-remove $_.FullName }
+
+# 遞迴處理子目錄
+Get-ChildItem "*.png" -Recurse | ForEach-Object { npx gemini-watermark-remove $_.FullName }
+```
+
 ## 🛠️ 技術原理
 
 使用逆向 Alpha 混合演算法：
