@@ -1,6 +1,6 @@
 ---
 name: gemini-watermark-remove
-description: 移除 Google Gemini 生成圖片中的浮水印，使用逆向 Alpha 混合演算法精確還原被覆蓋的像素
+description: 移除 Google Gemini 生成圖片中的浮水印 (Nano Banana)，使用逆向 Alpha 混合演算法精確還原被覆蓋的像素
 ---
 
 # Gemini 浮水印移除工具

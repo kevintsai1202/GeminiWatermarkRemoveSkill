@@ -5,7 +5,7 @@
 
 [繁體中文](README.zh-TW.md)
 
-Remove watermarks from Google Gemini AI generated images.
+Remove watermarks from Google Gemini AI generated images (Nano Banana).
 
 ## ✨ Features
 

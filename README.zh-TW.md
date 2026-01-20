@@ -5,7 +5,7 @@
 
 [English](README.md)
 
-移除 Google Gemini AI 生成圖片中的浮水印。
+移除 Google Gemini AI 生成圖片中的浮水印 (Nano Banana)。
 
 ## ✨ 功能
 
