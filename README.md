@@ -1,6 +1,7 @@
 # Gemini Watermark Remove Skill
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![npm version](https://badge.fury.io/js/gemini-watermark-remove.svg)](https://www.npmjs.com/package/gemini-watermark-remove)
 
 移除 Google Gemini AI 生成圖片中的浮水印。使用逆向 Alpha 混合演算法精確還原被覆蓋的像素。
 
@@ -11,31 +12,44 @@
 - ⚡ 支援批次處理
 - 🎯 自動偵測圖片尺寸並選擇適當遮罩
 
-## 📦 安裝
+## 📦 安裝與使用
+
+### 方法一：npx（推薦，無需安裝）
 
 ```powershell
-# 1. 複製專案
-git clone https://github.com/kevintsai1202/GeminiWatermarkRemoveSkill.git
-
-# 2. 安裝依賴
-cd GeminiWatermarkRemoveSkill
-npm install sharp
+npx gemini-watermark-remove <圖片路徑>
 ```
 
-## 🚀 使用方式
+### 方法二：全域安裝
+
+```powershell
+npm install -g gemini-watermark-remove
+gemini-watermark-remove <圖片路徑>
+```
+
+### 方法三：從原始碼
+
+```powershell
+git clone https://github.com/kevintsai1202/GeminiWatermarkRemoveSkill.git
+cd GeminiWatermarkRemoveSkill
+npm install
+node scripts/remove-watermark.js <圖片路徑>
+```
+
+## 🚀 使用範例
 
 ```powershell
 # 基本用法
-node scripts/remove-watermark.js <輸入圖片>
+npx gemini-watermark-remove image.png
 
 # 指定輸出路徑
-node scripts/remove-watermark.js image.png --output clean.png
+npx gemini-watermark-remove image.png --output clean.png
 
 # 強制使用大尺寸遮罩
-node scripts/remove-watermark.js image.png --mode large
+npx gemini-watermark-remove image.png --mode large
 
 # 調整 Alpha 增益值
-node scripts/remove-watermark.js image.png --gain 1.5
+npx gemini-watermark-remove image.png --gain 1.5
 ```
 
 ### 參數說明
@@ -57,19 +71,6 @@ node scripts/remove-watermark.js image.png --gain 1.5
 根據圖片尺寸自動選擇：
 - **≤1024px**: 使用 48×48 遮罩
 - **>1024px**: 使用 96×96 遮罩
-
-## 📁 目錄結構
-
-```
-GeminiWatermarkRemoveSkill/
-├── SKILL.md                      # Skill 說明
-├── README.md                     # 本文件
-├── assets/
-│   ├── mask_48.png               # 小尺寸遮罩
-│   └── mask_96.png               # 大尺寸遮罩
-└── scripts/
-    └── remove-watermark.js       # 主腳本
-```
 
 ## 🙏 致謝
 

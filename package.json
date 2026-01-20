@@ -1,23 +1,36 @@
 {
-    "name": "gemini-watermark-remove-skill",
+    "name": "gemini-watermark-remove",
     "version": "1.0.0",
     "description": "移除 Google Gemini AI 生成圖片中的浮水印",
     "main": "scripts/remove-watermark.js",
     "bin": {
-        "remove-watermark": "./scripts/remove-watermark.js"
+        "gemini-watermark-remove": "./scripts/remove-watermark.js"
     },
+    "files": [
+        "scripts",
+        "assets"
+    ],
     "scripts": {
         "start": "node scripts/remove-watermark.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kevintsai1202/GeminiWatermarkRemoveSkill.git"
     },
     "keywords": [
         "gemini",
         "watermark",
         "remove",
         "ai",
-        "skill"
+        "image",
+        "tool"
     ],
     "author": "kevintsai1202",
     "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/kevintsai1202/GeminiWatermarkRemoveSkill/issues"
+    },
+    "homepage": "https://github.com/kevintsai1202/GeminiWatermarkRemoveSkill#readme",
     "dependencies": {
         "sharp": "^0.33.0"
     }
