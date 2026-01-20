@@ -4,7 +4,7 @@
     "description": "移除 Google Gemini AI 生成圖片中的浮水印",
     "main": "scripts/remove-watermark.js",
     "bin": {
-        "gemini-watermark-remove": "./scripts/remove-watermark.js"
+        "gemini-watermark-remove": "scripts/remove-watermark.js"
     },
     "files": [
         "scripts",
