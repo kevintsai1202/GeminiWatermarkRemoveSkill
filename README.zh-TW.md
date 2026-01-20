@@ -14,6 +14,18 @@
 - ⚡ 支援批次處理
 - 🎯 自動偵測圖片尺寸並選擇適當遮罩
 
+## 📦 安裝方式
+
+### Antigravity Skill
+
+使用以下指令將此 Skill 加入 Antigravity：
+
+```
+/add-skill https://github.com/kevintsai1202/GeminiWatermarkRemoveSkill
+```
+
+> 安裝完成後，透過 AI 對話即可調用移除浮水印功能。
+
 ## 🚀 使用方式
 
 安裝此 Skill 後，透過 AI 對話即可調用：

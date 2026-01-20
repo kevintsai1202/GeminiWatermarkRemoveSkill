@@ -14,6 +14,18 @@ Remove watermarks from Google Gemini AI generated images (Nano Banana).
 - ⚡ Batch processing support
 - 🎯 Auto-detect image size and select appropriate mask
 
+## 📦 Installation
+
+### Antigravity Skill
+
+Add this Skill to Antigravity using the following command:
+
+```
+/add-skill https://github.com/kevintsai1202/GeminiWatermarkRemoveSkill
+```
+
+> After installation, invoke it through AI conversation to remove watermarks from images.
+
 ## 🚀 Usage
 
 After installing this Skill, invoke it through AI conversation:
