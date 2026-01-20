@@ -14,28 +14,13 @@
 
 ## 🚀 使用方式
 
+安裝此 Skill 後，透過 AI 對話即可調用：
+
 ### 單張圖片
-
-```powershell
-npx gemini-watermark-remove <圖片路徑>
-
-# 範例
-npx gemini-watermark-remove image.png
-npx gemini-watermark-remove image.png --output clean.png
-```
+> "幫我移除這張圖片的浮水印：D:\images\photo.png"
 
 ### 批次處理
-
-```powershell
-# 處理當前目錄所有 PNG 檔案
-Get-ChildItem "*.png" | ForEach-Object { npx gemini-watermark-remove $_.FullName }
-
-# 處理指定資料夾
-Get-ChildItem "D:\Images\*.png" | ForEach-Object { npx gemini-watermark-remove $_.FullName }
-
-# 遞迴處理子目錄
-Get-ChildItem "*.png" -Recurse | ForEach-Object { npx gemini-watermark-remove $_.FullName }
-```
+> "批次移除 D:\images 資料夾內所有圖片的浮水印"
 
 ## 🛠️ 技術原理
 
